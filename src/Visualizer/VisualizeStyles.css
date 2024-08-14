@@ -16,33 +16,36 @@
     background-color: #1E90FF;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-
+    position: relative;
+    left: 100px;
 }
 
 .generate-button {
     background-color: #1E90FF;
     border: 2px solid #000000;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    position: relative;
+    left: 100px;
 }
 
 .lower-button {
     background-color: #FFFFFF;
     border: 5px solid #1E90FF;
     color: black;
-    padding: 15px 32px;
+    padding: 5px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -50,14 +53,14 @@
     margin: 4px 2px;
     cursor: pointer;
     position: relative;
-    top: 50px;
+    top: 45px;
 }
 
 .random-button {
     background-color: #FFFFFF;
     border: 5px solid #1E90FF;
     color: black;
-    padding: 15px 32px;
+    padding: 5px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -65,19 +68,20 @@
     margin: 4px 2px;
     cursor: pointer;
     position: relative;
-    top: 120px;
+    top: 95px;
+    right: 500px;
 }
 
 .sort-info {
     background-color: #FFFFFF;
     border: 5px solid #000000;
     color: black;
-    padding: 15px 32px;
+    padding: 5px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     position: relative;
-    top: -25px;
+    top: -5px;
 }

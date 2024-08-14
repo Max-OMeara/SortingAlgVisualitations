@@ -1,8 +1,10 @@
 import React from "react";
-import "./SortingAlgStyles.css";
+import "./VisualizeStyles.css";
 import { randomIntFromInterval } from './utils';
+import { compareArrays } from './utils';
+import * as sortingAlgorithms from '../Algorithms/SortingAlgorithms';
 
-export default class SortingAlg extends React.Component {
+export default class Visualize extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,7 +28,12 @@ export default class SortingAlg extends React.Component {
 
     quickSort() { console.log("Quick Sort called"); }
 
-    mergeSort() { console.log("Merge Sort called"); }
+    mergeSort() {
+        const AutoSortedArray = this.state.array.slice().sort((a, b) => a - b);
+        const sortedArray = sortingAlgorithms.mergeSort(this.state.array);
+        console.log(compareArrays(AutoSortedArray, sortedArray));
+
+    }
 
     heapSort() { console.log("Heap Sort called"); }
 
