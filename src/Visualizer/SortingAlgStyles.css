@@ -1,0 +1,83 @@
+.array-bar {
+    width: 2px;
+    margin: 0 1px;
+    background-color: #1E90FF;
+    display: inline-block;
+}
+
+.array-container {
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    /* top: 50%; */
+}
+
+.button {
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.generate-button {
+    background-color: #1E90FF;
+    border: 2px solid #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.lower-button {
+    background-color: #FFFFFF;
+    border: 5px solid #1E90FF;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+.random-button {
+    background-color: #FFFFFF;
+    border: 5px solid #1E90FF;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+}
+
+.sort-info {
+    background-color: #FFFFFF;
+    border: 5px solid #000000;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    position: relative;
+    top: -25px;
+}
