@@ -20,19 +20,68 @@ export default class Visualize extends React.Component {
 
     resetArray() {
         const array = [];
-        for (let i = 0; i < 300; i++) {
+        for (let i = 0; i < 30; i++) {
             array.push(randomIntFromInterval(5, 500));
         }
         this.setState({ array });
     }
 
-    quickSort() { console.log("Quick Sort called"); }
+    quickSort() {
+        const animations = sortingAlgorithms.quickSort(this.state.array);
+        for (let i = 0; i < animations.length; i++) {
+            const arrayBars = document.getElementsByClassName('array-bar');
+            const isColorChange = animations[i].swap === null;
+            if (isColorChange) {
+                const [barOneIdx, barTwoIdx] = animations[i].comparison;
+                const barOneStyle = arrayBars[barOneIdx].style;
+                const barTwoStyle = arrayBars[barTwoIdx].style;
+                const color = i % 2 === 0 ? 'red' : 'blue';
+                setTimeout(() => {
+                    barOneStyle.backgroundColor = color;
+                    barTwoStyle.backgroundColor = color;
+                }, i * 10);
+            } else {
+                setTimeout(() => {
+                    const [barOneIdx, barTwoIdx] = animations[i].swap;
+                    const barOneStyle = arrayBars[barOneIdx].style;
+                    const barTwoStyle = arrayBars[barTwoIdx].style;
+                    const tempHeight = barOneStyle.height;
+                    barOneStyle.height = barTwoStyle.height;
+                    barTwoStyle.height = tempHeight;
+                }, i * 10);
+            }
+        }
+    }
+
 
     mergeSort() {
-        const AutoSortedArray = this.state.array.slice().sort((a, b) => a - b);
-        const sortedArray = sortingAlgorithms.mergeSort(this.state.array);
-        console.log(compareArrays(AutoSortedArray, sortedArray));
-
+        const animations = sortingAlgorithms.mergeSort(this.state.array);
+        const newAnimations = [];
+        for (const animation of animations) {
+            newAnimations.push(animation.comparison);
+            newAnimations.push(animation.comparison);
+            newAnimations.push(animation.swap);
+        }
+        for (let i = 0; i < newAnimations.length; i++) {
+            const arrayBars = document.getElementsByClassName('array-bar');
+            const isColorChange = i % 3 !== 2;
+            if (isColorChange) {
+                const [barOneIdx, barTwoIdx] = newAnimations[i];
+                const barOneStyle = arrayBars[barOneIdx].style;
+                const barTwoStyle = arrayBars[barTwoIdx].style;
+                const color = i % 3 === 0 ? 'red' : 'blue';
+                setTimeout(() => {
+                    barOneStyle.backgroundColor = color;
+                    barTwoStyle.backgroundColor = color;
+                }, i * 10);
+            } else {
+                setTimeout(() => {
+                    const [barOneIdx, newHeight] = newAnimations[i];
+                    const barOneStyle = arrayBars[barOneIdx].style;
+                    barOneStyle.height = `${newHeight}px`;
+                }, i * 10);
+            }
+        }
     }
 
     heapSort() { console.log("Heap Sort called"); }
@@ -129,3 +178,4 @@ export default class Visualize extends React.Component {
         );
     }
 }
+
