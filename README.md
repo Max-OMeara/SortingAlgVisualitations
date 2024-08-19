@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Sorting Algorithm Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+Sorting Algorithm Visualizer is a React application designed to help users, especially those learning or reviewing computer science concepts, visualize and understand various sorting algorithms. The project leverages JavaScript and React to create dynamic and interactive visualizations of how sorting algorithms work step-by-step. This tool is not only useful for memorizing algorithms but also for gaining a deeper understanding of how they function.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Visualization of Sorting Algorithms**: The application currently supports visualizing several sorting algorithms, with more planned for future updates.
+- **React-Based Interface**: The application is built using React, providing a modern and responsive user interface.
+- **Educational Tool**: Ideal for students and professionals who want to review or learn sorting algorithms through visual means.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sorting Algorithms Implemented
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **[Algorithm Name]**: A brief description of the algorithm (e.g., Merge Sort - a divide and conquer algorithm that splits the array into halves, recursively sorts them, and then merges the sorted halves).
 
-### `npm test`
+### Planned Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Quicksort**: A fast, in-place, divide and conquer algorithm that selects a pivot element and partitions the array into elements less than and greater than the pivot.
+- **Insertion Sort**: A simple, intuitive algorithm that builds the final sorted array one item at a time, placing each element in its correct position.
+- **Binary Tree Visualization**: A potential future feature that will help visualize binary tree structures and operations.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: A JavaScript library for building user interfaces.
+- **JavaScript**: The primary programming language used for algorithm logic and visualization.
+- **CSS**: Used for styling the application and creating visual effects.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## File Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **/src/Algorithms**: Contains the JavaScript files implementing the sorting algorithms.
+- **/src/Visualizer**: Contains the components responsible for rendering the visualizations.
+- **App.js**: The main application component that integrates the visualizer and algorithms.
+- **index.js**: The entry point of the React application.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/sorting-algorithm-visualizer.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate to the project directory**:
+   ```bash
+   cd sorting-algorithm-visualizer
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+4. **Start the application**:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Open in browser**: 
+   - Open your browser and navigate to `http://localhost:3000` to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions to this project are welcome! If you have ideas for new features or improvements, feel free to fork the repository, make your changes, and submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Plans
 
-### Analyzing the Bundle Size
+- **Additional Sorting Algorithms**: Implementation of more algorithms, including quicksort and insertion sort.
+- **Enhanced Visualizations**: Improving the existing visualizations with more detailed steps and options for users to control the speed and view of the sorting process.
+- **Binary Tree Visualization**: Adding a feature to visualize binary tree operations, including insertion, deletion, and traversal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is open-source and available to use, modify, and distribute it as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+This project was created to help solidify my understanding of sorting algorithms and React. It has been a valuable learning experience, and I hope it can be useful to others as well.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to adapt the README according to any additional details or changes in your project.
